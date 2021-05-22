@@ -254,7 +254,7 @@ document.querySelector("#datos").appendChild(nuevoDiv);
 
 */
 
-  /* Back to top button*/
+  /* Back to top button
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {
@@ -281,6 +281,6 @@ document.querySelector("#datos").appendChild(nuevoDiv);
     onscroll(document, toggleBacktotop)
   }
 
-  
+  */
 
   

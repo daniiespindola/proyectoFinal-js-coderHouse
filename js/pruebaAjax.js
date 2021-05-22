@@ -14,6 +14,6 @@ $("#ajaxForm").submit(function(e){
   }).done(function() {
      $('.success').addClass('is-active');
   }).fail(function() {
-     alert('An error occurred please try again later.')
+     alert('Ocurrio un error intente nuevamente')
   });
 });
