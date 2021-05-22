@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Queres hacer un asado y no sabes cuanto comprar? Nosotros lo calculamos por vos, y te lo llevamos a tu casa">
+    <meta name="keywords" content="CARNE, CARNICERIA, MORCILLA, CHORIZO, VACIO, ASADO, TIRA, PARRILLA, CANTIDAD, CALCULADORA, COMENSALES, COMER, COCINAR, COMPRAR, ENVIO, MOLLEJA, CHINCHULIN, CERDO, VACA, ACHURAS, BONDIOLA, MATAMBRE, PECHITO">
+    <title>Sale Asado :: Home</title>
+    <link rel="icon" href="./logo_sale-asado_2.png" type="image/png"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="sass\css\main.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- Third party plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"/>
+
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"> <img src="./nombre_logo.png" alt="Logo sale asado"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#calculador">Calculador</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Productos</a></li>
+                   <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#destacados">Destacados</a></li>-->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#recetas">Recetas</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <section id="calculador">
+        <header class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+                        <img src="./assets/img/logo_sale-asado.png" alt="logo sale asado">
+                        <h1 class="text-uppercase text-white font-weight-bold">Sale Asado</h1>
+                        <hr class="divider my-4" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 font-weight-light mb-5">¿Querés hacer un asado y no sabés cuanto comprar? <br>Nosotros lo calculamos por vos, y te lo llevamos a tu casa</p>
+                        <button type="button" class=" btn btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal" data-target="#modal-calculador">Calculá las cantidades</button><!--<a class="btn btn-primary btn-xl js-scroll-trigger" href="#modal-calculador"></a>-->
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <!-- div con resultados-->
+    <div class="row">
+        <div id="datos" style="width: auto;">
+
+        </div>
+
+    </div>
+    <!-- fin de div con resultados-->
+
+        <!-- About
+        <section class="page-section bg-primary" id="about">
+            <div class="container" id="calculador">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0" >¡No compres de más!</h2>
+                        <hr class="divider light my-4" />
+                        <p class="text-white-50 mb-4">Con nuestra calculadora vas a poder calcular con presición cuánta carne necesitás, para los invitados que tengas, teniendo en cuenta sus preferencias</p>
+                        <button type="button" class=" btn btn btn-light btn-xl js-scroll-trigger" data-toggle="modal" data-target="#modal-calculador">¡Empecemos!</button>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <!-- Services-->
+        <section class="page-section">
+            <div class="container">
+                <h2 class="text-center mt-0">Conocé nuestros productos</h2>
+                <hr class="divider my-4" />
+
+            </section>
+            <!-- Portfolio-->
+            <div id="portfolio">
+                <div class="container-fluid p-0">
+                    <div class="row no-gutters">
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg">
+                                <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Achuras</div>
+                                    <div class="project-name">Chorizo Puro de Cerdo</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg">
+                                <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Cerdo</div>
+                                    <div class="project-name">Bondiola</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg">
+                                <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Vaca</div>
+                                    <div class="project-name">Vacío</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg">
+                                <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Achuras</div>
+                                    <div class="project-name">Morcilla</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg">
+                                <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Cerdo</div>
+                                    <div class="project-name">Pechito de Cerdo</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg">
+                                <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="" />
+                                <div class="portfolio-box-caption p-3">
+                                    <div class="project-category text-white-50">Vaca</div>
+                                    <div class="project-name">Entraña</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destacados-->
+
+            <!-- fin de destacados-->
+
+            <!-- Call to action-->
+            <section class="page-section bg-dark text-white" id="recetas">
+                <div class="container text-center">
+                    <h2 class="mb-4">¿Necesitás inspiración parrillera?</h2>
+                    <a class="btn btn-light btn-xl" target="_blank" href="https://www.youtube.com/user/locosxelasado">Recetas</a>
+                </div>
+            </section>
+            <!-- Contact-->
+            <section class="page-section" id="contact">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="mt-0">Contactanos</h2>
+                            <hr class="divider my-4" />
+                            <p class="text-muted mb-5">Nos gusta hacerte la vida mas fácil, asique cualquier comentario es útil para nosotros.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                            <div>
+                                <a href="https://api.whatsapp.com/send?phone=5491159104084&text=Consulta web"><i class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;<span> 1157128766</span></a></div>
+                            </div>
+                            <div class="col-lg-4 mr-auto text-center">
+
+                                <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
+                                <a class="d-block" href="mailto:info@sale-asado.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;<span> info@saleasado.com.ar</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-3 mt-5">
+
+
+                        <form accept-charset="UTF-8" action="https://getform.io/f/d709b72b-d30b-4316-9cc1-4d1d33778a8b" method="POST" target="_blank" id="ajaxForm">
+
+                            <div class="form-group">
+                                <label for="exampleInputName">Nombre</label>
+                                <input type="text" name="name" class="form-control" id="exampleInputName" placeholder="Ingresa tu nombre" required="required">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" required="required">Mail</label>
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu mail">
+                            </div>
+
+                            <div class="form-group">
+
+                                <label class="form-label">Mensaje:</label>       
+                                <textarea name="content" id="content" class="form-control" cols="60" rows="6" placeholder="Escribenos aquí tu mensaje..." required="required"></textarea>
+
+
+
+                            </div>
+                            <div class="success">Hemos recibido tu mensaje, muchas gracias!</div> 
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+
+                </section>
+                <!-- Footer-->
+                <footer class="bg-light py-5">
+                    <section class="copyright"><p>Designed by &copy;<a href="https://github.com/daniiespindola">SaleAsado</a></p></section>
+                </footer>
+                <!--Modal Calculadora-->
+                <div class="modal fade" id="modal-calculador" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog form-dark" role="document">
+                        <!--Content-->
+                        <div class="modal-content card card-image">
+                            <div class="z-depth-4">
+                                <!--Header-->
+                                <div class="modal-header text-center d-flex flex-wrap">
+                                    <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h3 class="modal-title col-md-12" id="myModalLabel"><strong>Comencemos el calculo</strong></h3><br>
+                                    <p>A un buen parrillero no le quedan sobras en la parrilla &#128521</p>
+                                </div>
+                                <!--Bdy-->
+                                <form id="formulario">
+                                    <div class="modal-body">
+                                        <!--Body-->
+                                        <div class="md-form mb-5">
+                                            <label for="parrillero">Nombre del Parriller@</label>
+                                            <input type="text" id="parrillero" placeholder="Nombre del parriler@" class="form-control validate white-text">
+                                        </div>
+                                        <div class="md-form pb-3">
+                                            <label for="comensales">¿Cuánta gente va a comer?</label>
+                                            <input type="text" id="comensales" placeholder="Indicar la cantidad en números" class="form-control validate white-text">
+                                        </div>
+                                        <div>
+                                            <label for="achuras">¿Comen achuras?</label><br>
+                                            <input type="text" class="form-control" id="achuras" placeholder="Mucho, poco o nada?">
+
+                                        </div>
+
+                                        <div>
+                                            <label for="tipoDeCarne">¿Qué tipo de carne prefieren: vaca, cerdo o mixto?</label>
+                                            <input type="text" class="form-control" id="tipoDeCarne" placeholder="Vaca, cerdo o mixto?">
+                                        </div>
+
+                                    </div>
+                                    <div class="text-center mb-3 col-md-12">
+                                        <button type="submit" id="enviar btn-calcular" class="btn btn btn-primary btn-xl js-scroll-trigger">Calcular</button>
+                                    </div> 
+                                </form> 
+                            </div>
+                            <!--/.Content-->
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Bootstrap core JS-->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+                <!-- Third party plugin JS-->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+                <!-- Core theme JS-->
+                <script src="js/scripts.js"></script>
+
+
+                <!-- jQuery Bootstrap -->
+                <script
+                src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                crossorigin="anonymous"></script>>
+                <!-- Popper Bootstrap -->
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>    
+                <!-- Bootstrap -->
+                <script src="js/bootstrap.min.js"></script>
+                <!--JS-->
+                <!-- <script src="./js/calculadora.js"></script> -->
+                <script src="./js/productos.js"></script>
+                <script src="./js/index.js"></script>
+                <script src="./js/pruebaAjax.js"></script>
+            </body>
+            </html>
